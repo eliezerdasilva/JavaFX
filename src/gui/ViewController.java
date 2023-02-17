@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import application.Main;
 import gui.util.Alerts;
 import gui.util.Constraints;
 import javafx.fxml.FXML;
@@ -39,7 +40,7 @@ public class ViewController implements Initializable {
 	}
 
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	public void initialize(URL url, ResourceBundle rb) {
 		Constraints.setTextFieldDouble(txtNumero1);
 		Constraints.setTextFieldDouble(txtNumero2);
 		Constraints.setTextFieldMaxLength(txtNumero1, 2);
